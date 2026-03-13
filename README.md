@@ -1,4 +1,4 @@
-# Wine Quality Prediction using RandomForest
+# Wine Quality Prediction
 
 ## Project Overview
 
@@ -39,40 +39,6 @@ The target variable **quality** was converted into binary classification:
 quality ≥ 7 → Good Wine
 quality < 7 → Bad Wine
 
-
----
-
-# Exploratory Data Analysis
-
-Some basic analysis was performed to understand the data:
-
-- distribution of wine quality
-- relationship between quality and chemical properties
-- correlation heatmap between features
-
-These visualizations helped understand which features may influence wine quality.
-
----
-
-# Model
-
-The model used for prediction is **Random Forest Classifier**.
-
-Model improvements included:
-
-- hyperparameter tuning using **GridSearchCV**
-- evaluation using **precision, recall, F1 score, and ROC-AUC**
-
----
-
-# Results
-
-Model performance on the test set:
-
-Accuracy: ~93%
-
-Confusion Matrix:
-
 ---
 
 # Exploratory Data Analysis
@@ -108,7 +74,6 @@ Confusion Matrix:
 [[194 7]
 [ 9 19]]
 
-
 Evaluation metrics:
 
 Precision: ~0.73  
@@ -119,22 +84,6 @@ ROC-AUC: ~0.96
 The model performs well overall while still capturing the minority class reasonably.
 
 ---
-
-# Project Structure
-
-
-wine-quality-prediction
-│
-├── train_model.py
-├── app.py
-├── streamlit_app.py
-├── wine_model.pkl
-├── WineQT.csv
-└── README.md
-
-
----
-
 # Running the Project
 
 ### Train the model
@@ -183,3 +132,4 @@ Streamlit
 # Author
 
 Harshini Gondesi
+
